@@ -7,6 +7,23 @@
     <groupId>com.henryxi.mybatis</groupId>
     <artifactId>mybatis</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>quick-start</module>
+        <module>generator</module>
+    </modules>
     <packaging>pom</packaging>
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>9.3-1100-jdbc41</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>3.2.8</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
