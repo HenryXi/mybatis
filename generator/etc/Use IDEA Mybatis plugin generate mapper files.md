@@ -12,6 +12,7 @@ file and mapper interface.
 
     Right click resources folder choose **New** | **mybatis-generator-config**. I named this file "mybatis-generator.xml"
     you can choose any name you like.
+    
     ![IDEA Mybatis plugin](http://a.disquscdn.com/uploads/mediaembed/images/3829/6805/original.jpg)
 3. the content of mybatis-generator-config like following. 
     
@@ -74,6 +75,7 @@ files to resource folder.
     ![run config](http://a.disquscdn.com/uploads/mediaembed/images/3830/8797/original.jpg)
 
 6. the structure of this demo like following.
+
     ```
     └─main
         ├─java
@@ -97,6 +99,7 @@ files to resource folder.
                     UserInfoEntityMapper.xml
     ```
 7. the code of java
+
     ```java
     public class Client {
         public static void main(String[] args) throws IOException {
