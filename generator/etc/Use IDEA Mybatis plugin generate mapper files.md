@@ -68,8 +68,9 @@ file and mapper interface.
 4. This plugin won't create package you need create package and folder manually. The structure of this demo at
     the end of this page.
     
-5. Right click "mybatis-generator" and choose **Run as Mybatis Generator**. After generating move the mapper xml files to resource
-    folder.
+5. Right click "mybatis-generator" and choose **Run as Mybatis Generator**. After generating move the mapper xml 
+files to resource folder.
+    
     ![run config](http://a.disquscdn.com/uploads/mediaembed/images/3830/8797/original.jpg)
 
 6. the structure of this demo like following.
