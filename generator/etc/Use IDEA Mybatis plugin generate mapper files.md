@@ -14,7 +14,7 @@ file and mapper interface.
     you can choose any name you like.
     
     ![IDEA Mybatis plugin](http://a.disquscdn.com/uploads/mediaembed/images/3829/6805/original.jpg)
-3. the content of mybatis-generator-config like following. 
+3. the content of mybatis-generator.xml like following. 
     
     ```xml
     <?xml version="1.0" encoding="UTF-8" ?>
@@ -98,7 +98,7 @@ files to resource folder.
             └─mapper
                     UserInfoEntityMapper.xml
     ```
-7. the code of java
+7. the code of java and mybatis config
 
     ```java
     public class Client {
@@ -122,4 +122,43 @@ files to resource folder.
             }
         }
     }
+    ```
+    
+    mybatis-config.xml
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE configuration
+            PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+            "http://mybatis.org/dtd/mybatis-3-config.dtd">
+    <configuration>
+    
+        <settings>
+            <!-- Globally enables or disables any caches configured in any mapper under this configuration -->
+            <setting name="cacheEnabled" value="true"/>
+            <!-- Sets the number of seconds the driver will wait for a response from the database -->
+            <setting name="defaultStatementTimeout" value="3000"/>
+            <!-- Enables automatic mapping from classic database column names A_COLUMN to camel case classic Java property names aColumn -->
+            <setting name="mapUnderscoreToCamelCase" value="true"/>
+            <!-- Allows JDBC support for generated keys. A compatible driver is required.
+            This setting forces generated keys to be used if set to true,
+             as some drivers deny compatibility but still work -->
+            <setting name="useGeneratedKeys" value="true"/>
+        </settings>
+    
+        <!-- Continue going here -->
+        <environments default="development">
+            <environment id="development">
+                <transactionManager type="JDBC"/>
+                <dataSource type="POOLED">
+                    <property name="driver" value="org.postgresql.Driver"/>
+                    <property name="url" value="jdbc:postgresql://localhost:5432/users"/>
+                    <property name="username" value="postgres"/>
+                    <property name="password" value="postgres"/>
+                </dataSource>
+            </environment>
+        </environments>
+        <mappers>
+            <mapper resource="mapper/UserInfoEntityMapper.xml"/>
+        </mappers>
+    </configuration>
     ```
