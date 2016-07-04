@@ -3,10 +3,12 @@ package com.henryxi.mybatis;
 import com.henryxi.mybatis.entity.UserInfoEntity;
 import com.henryxi.mybatis.entity.UserInfoEntityExample;
 import com.henryxi.mybatis.mapper.UserInfoEntityMapper;
+import org.apache.ibatis.exceptions.PersistenceException;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.postgresql.util.PSQLException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,8 +31,14 @@ public class Client {
             example.createCriteria().andNameEqualTo("HenryXi");
             List<UserInfoEntity> allRecords = mapper.selectByExample(example);
             sqlSession.commit();
+        } catch (PersistenceException e) {
+            final Throwable cause = e.getCause();
+            if (cause instanceof PSQLException) {
+                // handle the exception
+            }
         } finally {
             sqlSession.close();
         }
     }
 }
+
