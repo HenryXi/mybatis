@@ -5,7 +5,7 @@
 <generatorConfiguration>
 
     <!-- !!!! Driver Class Path !!!! -->
-    <classPathEntry location="C:\Users\Administrator\.IntelliJIdea15\config\jdbc-drivers\postgresql-9.4-1201.jdbc4.jar"/>
+    <classPathEntry location="C:\Users\Administrator\.IntelliJIdea2016.1\config\jdbc-drivers\mysql-connector-java-5.1.35-bin.jar"/>
 
     <context id="context" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -14,8 +14,8 @@
         </commentGenerator>
 
         <!-- !!!! Database Configurations !!!! -->
-        <jdbcConnection driverClass="org.postgresql.Driver"
-                        connectionURL="jdbc:postgresql://localhost:5432/users" userId="postgres" password="postgres"/>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.100.64:3306/mall_goods_database" userId="lhjh" password="lhjh"/>
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
@@ -38,10 +38,17 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
+        <!--&lt;!&ndash; !!!! Table Configurations !!!! &ndash;&gt;-->
+        <!--<table tableName="users" modelType="flat" domainObjectName="UserInfoEntity">-->
+            <!--<property name="ignoreQualifiersAtRuntime" value="true"/>-->
+            <!--<property name="modelOnly" value="false"/>-->
+        <!--</table>-->
+
         <!-- !!!! Table Configurations !!!! -->
-        <table tableName="users" modelType="flat" domainObjectName="UserInfoEntity">
+        <table tableName="test_table" modelType="flat" domainObjectName="UserInfoEntity">
             <property name="ignoreQualifiersAtRuntime" value="true"/>
             <property name="modelOnly" value="false"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>
 </generatorConfiguration>

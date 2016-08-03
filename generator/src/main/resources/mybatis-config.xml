@@ -22,10 +22,10 @@
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="org.postgresql.Driver"/>
-                <property name="url" value="jdbc:postgresql://localhost:5432/users"/>
-                <property name="username" value="postgres"/>
-                <property name="password" value="postgres"/>
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://192.168.100.64:3306/mall_goods_database"/>
+                <property name="username" value="lhjh"/>
+                <property name="password" value="lhjh"/>
             </dataSource>
         </environment>
     </environments>
