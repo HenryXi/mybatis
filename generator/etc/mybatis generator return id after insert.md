@@ -1,8 +1,7 @@
 # MyBatis generator return id after insert
-MyBatis generator support returning id after inserting record. If you do not know how to use MyBatis generator you
-can click [here](http://www.henryxi.com/use-idea-mybatis-plugin-generate-mapper-files). You can also maven plugin or 
-other ways to generate mapper xml file and model class. In this blog I will show you how to generate mapper that can
-return auto increase id after inserting.
+In this blog I will show you how to generate mapper that can return auto increase id after inserting.If you do not 
+know how to use MyBatis generator you can click [here](http://www.henryxi.com/use-idea-mybatis-plugin-generate-mapper-files). 
+You can also maven plugin or other ways to generate mapper xml file and model class. 
 
 **project structure**
 
@@ -34,7 +33,7 @@ return auto increase id after inserting.
 
 **mybatis-generator.xml**
 
-The most important config line is `<generatedKey column="id" sqlStatement="MySql" identity="true"/>`. `<generatedKey>` 
+The most important part of configuration is `<generatedKey column="id" sqlStatement="MySql" identity="true"/>`. `<generatedKey>` 
 means let DB generate auto increase id. You do not need pass id into entity. `identity` means For `<generatedKey>` detail you can see
 [here](http://www.mybatis.org/generator/configreference/generatedKey.html). I do not found `<generatedKey>` support
 PostgreSql ;(
