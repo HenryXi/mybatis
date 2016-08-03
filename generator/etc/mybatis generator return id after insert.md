@@ -1,5 +1,5 @@
 # MyBatis generator return id after insert
-In this blog I will show you how to generate mapper that can return auto increase id after inserting.If you do not 
+In this blog I will show you how to generate mapper that can return auto increase id after inserting. If you do not 
 know how to use MyBatis generator you can click [here](http://www.henryxi.com/use-idea-mybatis-plugin-generate-mapper-files). 
 You can also maven plugin or other ways to generate mapper xml file and model class. 
 
