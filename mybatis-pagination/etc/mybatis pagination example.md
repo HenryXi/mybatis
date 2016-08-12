@@ -29,7 +29,7 @@ If you do not know how to use it click [here](http://www.henryxi.com/use-idea-my
 
 **pom.xml**
 
-This plugin(pagehelper) support many databases I choose MySQL you can use any one of them.
+This plugin (pagehelper) support many databases I choose MySQL you can use any one of them.
 ```xml
 <dependency>
     <groupId>mysql</groupId>
