@@ -40,7 +40,7 @@ public class Client {
             List<UserInfoEntity> userInfoEntityList = mapper.selectByExample(example);
             System.out.println("pageNum:" + 1 + ",pageSize:" + 10);
             for (UserInfoEntity userInfoEntity : userInfoEntityList) {
-                System.out.println(userInfoEntity.getId() + " " + userInfoEntity.getUserName());
+                System.out.println(userInfoEntity.getUserName() + " " + userInfoEntity.getPassword());
             }
             sqlSession.commit();
         } catch (PersistenceException e) {
