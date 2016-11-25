@@ -9,8 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>quick-start</module>
-        <module>mybatis-generator</module>
+        <module>mybatis-idea-plugin-generator</module>
         <module>mybatis-pagination</module>
+        <module>mybatis-maven-plugin-generator</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>
