@@ -36,7 +36,7 @@ public class Client {
             UserInfoEntityExample example = new UserInfoEntityExample();
             UserInfoEntityExample.Criteria criteria = example.createCriteria();
             criteria.andIdGreaterThan(10);
-            PageHelper.startPage(1, 10);
+            PageHelper.startPage(1, 10, false);
             List<UserInfoEntity> userInfoEntityList = mapper.selectByExample(example);
             System.out.println("pageNum:" + 1 + ",pageSize:" + 10);
             for (UserInfoEntity userInfoEntity : userInfoEntityList) {
