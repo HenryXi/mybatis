@@ -67,6 +67,7 @@ User `mybatis-generator` to generate `User.java`,`UserExample.java`,`UserMapper.
 ```
 
 **log4j configuration**
+
 If you use log4j.properties the content is almost like following.
 ```ini
 # Global logging configuration
