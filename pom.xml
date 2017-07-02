@@ -12,6 +12,7 @@
         <module>mybatis-idea-plugin-generator</module>
         <module>mybatis-pagination</module>
         <module>mybatis-maven-plugin-generator</module>
+        <module>mybatis-log</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>
