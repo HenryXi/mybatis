@@ -1,7 +1,7 @@
 # MyBatis first level cache example
 The first level cache is enabled by default in MyBatis. It will cache the result after querying data from database. The second
 time you query MyBatis won't hit db. The first level cache is for session. If the session is close the cache will be cleared.
-I assume that you have create database and insert some data in your table.
+I assume that you have created database and insert some data in your table.
 
 **table create sql**
 ```sql
