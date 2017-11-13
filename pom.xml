@@ -13,6 +13,7 @@
         <module>mybatis-pagination</module>
         <module>mybatis-maven-plugin-generator</module>
         <module>mybatis-log</module>
+        <module>mybatis-cache</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>
