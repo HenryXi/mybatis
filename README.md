@@ -1,5 +1,5 @@
 # MyBatis tutorial
-MyBatis is a Java persistence framework. It is easy to use and learn. This tutorial shows the most common scenario.
+MyBatis is a Java persistence framework. It is easy to use and learn. This tutorial shows the most common scenarios.
 
 * [MyBatis pagination example](http://www.henryxi.com/mybatis-pagination-example)
 * [Mybatis generator maven example](http://www.henryxi.com/mybatis-generator-maven-example)
