@@ -8,3 +8,4 @@ MyBatis is a Java persistence framework. It is easy to use and learn. This tutor
 * [MyBatis generator return id after insert](http://www.henryxi.com/mybatis-generator-return-id-after-insert)
 * [Use IDEA Mybatis plugin generate mapper files](http://www.henryxi.com/use-idea-mybatis-plugin-generate-mapper-files)
 * [MyBatis first level cache example](http://www.henryxi.com/mybatis-first-level-cache-example)
+* [MyBatis Spring example](http://www.henryxi.com/mybatis-spring-example)
