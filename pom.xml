@@ -14,6 +14,7 @@
         <module>mybatis-maven-plugin-generator</module>
         <module>mybatis-log</module>
         <module>mybatis-cache</module>
+        <module>mybatis-spring</module>
     </modules>
     <packaging>pom</packaging>
     <dependencyManagement>
